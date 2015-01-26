@@ -27,9 +27,9 @@ function [] = svm_regression_generator()
   %film-preference:
  feat_tmp=[get_fusion_feat(UserAverScore(rate_rec_tmp(1),:),FilmScore_Preference(rate_rec_tmp(2),:)),  ...    %user-preference info.
               get_user_age_info(rate_rec_tmp(1),uuser),...                                                    %user-age info.
-              get_user_job_info(rate_rec_tmp(1),uuser),...                                                %user-rate_rec_tmp(2)ob info.
-              FilmScore_Age(rate_rec_tmp(2),:),...                                                        %film-age score.
-              FilmScore_Occupation(rate_rec_tmp(2),:)];                                                   %film-occupation socre.
+              get_user_job_info(rate_rec_tmp(1),uuser),...                                                    %user-rate_rec_tmp(2)ob info.
+              FilmScore_Age(rate_rec_tmp(2),:),...                                                            %film-age score.
+              FilmScore_Occupation(rate_rec_tmp(2),:)];                                                       %film-occupation socre.
     
      %film's final score.
     
@@ -45,7 +45,7 @@ ga_option.pMutation = 0.01;
 ga_option.cbound = [0.1,100];
 ga_option.gbound = [0.01,100];
 ga_option.v = 3;
-[bestCVmse,bestc,bestg,ga_option] = gaSVMcgForRegress(score(1:60000,:),feat(1:60000,:),ga_option);   
+[bestCVmse,bestc,bestg,ga_option] = gaSVMcgForRegress(score(1:2000,:),feat(1:2000,:),ga_option);   
 
   cmd = [' -s 3 -p 0.4 -h 0 -c ',num2str(bestc),' -g ',num2str(bestg)];                               %using best param to train svm regression.
  % cmd = ['-s 3 -p 0.4 -h 0'];
