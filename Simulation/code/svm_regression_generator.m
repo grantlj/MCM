@@ -16,14 +16,25 @@ function [] = svm_regression_generator()
   for i=1:size(udata,1)
     rate_rec_tmp=udata(i,:);
     %disp(num2str(rate_rec_tmp(3)));
-    feat_tmp=[UserAverScore(rate_rec_tmp(1),:),  ...                                          %user-preference info.
-              get_user_age_info(rate_rec_tmp(1),uuser),...                                    %user-age info.
-              get_user_job_info(rate_rec_tmp(1),uuser),...                                    %user-job info.
-              FilmScore_Age(rate_rec_tmp(2),:),...                                            %film-age score.
-              FilmScore_Occupation(rate_rec_tmp(2),:)];                                       %film-occupation socre.
-     feat(i,:)=feat_tmp;
-    % score=[score;rate_rec_tmp(3)];                                                          %film's final score.
+%     feat_tmp=[UserAverScore(rate_rec_tmp(1),:),  ...                                          %user-preference info.
+%               get_user_age_info(rate_rec_tmp(1),uuser),...                                    %user-age info.
+%               get_user_job_info(rate_rec_tmp(1),uuser),...                                    %user-job info.
+%               FilmScore_Preference(rate_rec_tmp(2),:),...                                      %film-preference score.
+%               FilmScore_Age(rate_rec_tmp(2),:),...                                            %film-age score.
+%               FilmScore_Occupation(rate_rec_tmp(2),:)];                                       %film-occupation socre.
+  
+%improved version: fusion user-preference and
+  %film-preference:
+ feat_tmp=[get_fusion_feat(UserAverScore(rate_rec_tmp(1),:),FilmScore_Preference(rate_rec_tmp(2),:)),  ...    %user-preference info.
+              get_user_age_info(rate_rec_tmp(1),uuser),...                                                    %user-age info.
+              get_user_job_info(rate_rec_tmp(1),uuser),...                                                %user-rate_rec_tmp(2)ob info.
+              FilmScore_Age(rate_rec_tmp(2),:),...                                                        %film-age score.
+              FilmScore_Occupation(rate_rec_tmp(2),:)];                                                   %film-occupation socre.
+    
+     %film's final score.
+    
      score(i,:)=rate_rec_tmp(3);
+      feat(i,:)=feat_tmp;
   end
   
 % GA Algorithm to search for bestc and best g for svm regression model. 
@@ -37,9 +48,11 @@ ga_option.v = 3;
 [bestCVmse,bestc,bestg,ga_option] = gaSVMcgForRegress(score(1:60000,:),feat(1:60000,:),ga_option);   
 
   cmd = [' -s 3 -p 0.4 -h 0 -c ',num2str(bestc),' -g ',num2str(bestg)];                               %using best param to train svm regression.
+ % cmd = ['-s 3 -p 0.4 -h 0'];
+ % cmd=[' '];
   model = svmtrain(score(1:60000,:), feat(1:60000,:), cmd);        
   
-  save('model',[dataset_path,'svm_regression_model.mat']);
+  save([dataset_path,'svm_regression_model.mat'],'model');
   
   [predict,accuracy,decision_value] = svmpredict(score(60000:100000,:),feat(60000:100000,:),model);   %using 60000-100000 record as cross-validation.
   predict=round(predict);
@@ -64,6 +77,18 @@ end
 function [job_feat]=get_user_job_info(userid,uuser)
   job_feat=zeros(1,21);
   job_feat(1,uuser(userid,3))=1;
+end
+
+function [fusion_feat]=get_fusion_feat(user_pre,film_pre)
+  fusion_feat=user_pre.*film_pre./(max(user_pre)*max(film_pre));
+
+  for i=1:size(fusion_feat,2)
+    if (isnan(fusion_feat(1,i)))
+        fusion_feat(1,i)=0;
+    end
+   end
+
+
 end
 
 
