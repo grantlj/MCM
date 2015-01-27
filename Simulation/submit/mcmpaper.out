@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Solution for sub-problem 1}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Analysis and Assumptions}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Models}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Experiment Result}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Solution for sub-problem 2}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Analysis and Assumptions}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Models}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Support Vector Machine regression}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Classification and Regression Tree}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Collaborative Filtering Algorithm}{subsection.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Experiment Result}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Solution for sub-problem 3}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Analysis and Assumptions}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Models}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Experiment Result}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 17

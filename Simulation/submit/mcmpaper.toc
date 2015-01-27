@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {section}{\numberline {2}Solution for sub-problem 1}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Analysis and Assumptions}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Models}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Experiment Result}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Solution for sub-problem 2}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Analysis and Assumptions}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Models}{8}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Support Vector Machine regression}{8}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Classification and Regression Tree}{8}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Collaborative Filtering Algorithm}{8}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Experiment Result}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Solution for sub-problem 3}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Analysis and Assumptions}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Models}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Experiment Result}{8}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}

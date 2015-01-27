@@ -1,0 +1,57 @@
+%=====================导=======言==============================
+\documentclass[a4paper,11pt]{article}
+%======================Include Packages========================
+
+\usepackage[36428]{MCMthesis}  %队号在这里填写
+%\usepackage[175,nosheet]{MCMthesis}%这个参数形式可去掉summary sheet首页。
+\problem{B}  %选题
+%===============设置正文和数学字体=============================
+%有些字体需要安装一些字体文件，注意辨别。
+%我参照 MCM论文集的字体 使用如下宏包来定制字体。
+\usepackage{palatino}
+
+%设置段落之间的距离，若不需要删除或者注释掉即可。
+\setlength\parskip{.5\baselineskip}
+
+%def\abstractname{Summary}%可修改摘要名称
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%$$$$$$$==正文开始==$$$$$$$%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%==========================论文标题===============================
+\title{An implement of film recommendation system based on statistical models}
+\author{Team \#36428}
+\date{\today}
+%=================================================================
+%==================================================================
+\begin{document}
+%摘要需要放在maketitle之前才能保证运行正常
+%====================摘=======要===================================
+\begin{abstract}
+  With the rapid development in Internet technology, the trend of appreciating films online is becoming heated. In order to realize the maximum profits, it is essential for content providers to collect users' information, including both their basic personal identities and implicit  browsing histories and habits, to analyse their characteristic film styles and eventually recommend potential best choices for the users. Actually, this kind of application pipeline has been widely used like NetFlix[cite1], Hulu[cite2] and Amazon[cite3], etc. 
+  In this competition problem, we are required to implement a simple version of such system. Therefore, we focus our attention on the utilization of raw data provided by MovieLens dataset[cite4] and model relatively precision and objective features for both users and movies. Later, we are able to analyse specific users'  film favor based on statistic approaches. In addition, with the aid of Support Vector Machine(SVM) and Classification and Regression Tree(C\&RT), we innovatively mine the implicit information from rating records and establish a predictive model based on users' and movies' features. Finally, we set experiments to compare our models with the traditional collaborative filtering algorithm and get some interesting conclusions. 
+  
+\begin{keywords}
+recommendation system; collaborative filtering; SVM regression; C\&RT
+\end{keywords}
+\end{abstract}
+
+\maketitle
+\pagestyle{empty}
+%
+\newpage                                                          %
+%==================================================================
+
+
+%====================生=成=目=录===================================
+\tableofcontents                                                  %                                            %
+\newpage
+\pagestyle{fancy}                                                     %
+%==================================================================
+\input{body.tex}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%===========THE END OF PAPER============%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

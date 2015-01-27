@@ -1,0 +1,154 @@
+
+%======================问题介绍====================================
+\section{Introduction}
+With the rapid progress in information technology, people have entered into the epoch with overloaded information. From the prospective of the content provider, it is urgent and necessary to provide accurate and specific information to a particular user, mostly according to his or her personal information and browsing records. Such an system is commonly considered as a automatic recommendation based on data mining, machine learning and statistic models. The most well-known and powerful applications of such system in industry fields include Amazon's goods recommendation system, Hulu and NetFlix's film recommendation platform, etc. Actually, no matter we have realized or not, we are experiencing this technology every day. 
+
+In this problem, we are generally required to implement such a film recommendation system based on MovieLens[cite] dataset. The MovieLens dataset provides us with 100,000 records of users' rates to over 1,000 films ranging from 1 to 5. In addition, it offers us with users fundamental personal identities: ages and occupation. Besides, each films are classified into 19 different themes(romantic, drama, comedy...). On the basis of these information, the problem requires us to realize the following three sub-goals.
+\begin{itemize}
+\item \textbf{Sub-problem 1:} Establish the users' film favor mathematical models and analyse some particular users' favor. 
+\item \textbf{Sub-problem 2:} Establish the films' theme models and combine with models in Sub-problem 1 to recommend 5 films for users mentioned in 1.  
+\item\textbf{ Sub-problem 3:} Realize a recommendation system for new users with only register information.
+\end{itemize} 
+
+We solve sub-problem 1 by modelling users' feature and films feature and analysing the relationship between them. In sub-problem 2 and 3, we furthermore try to determine the analytical numerical model between the combination of users, film feature and the final rating score by SVM[cite] and C\&RT. Finally we test and compare our model with state-of-the-art: collaborative filtering algorithm.
+
+The structure of the paper is organized by three sub-problems, respectively. In each sub-problem, we give our assumptions, models and experiment results. The final conclusion is given in section 5. The codes and are shown in Appendix. 
+
+%    \begin{Theorem} \label{thm:latex}
+%    \LaTeX
+%    \end{Theorem}
+%    \begin{Lemma} \label{thm:tex}
+%    \TeX .
+%    \end{Lemma}
+%    \begin{proof}
+%    The proof of theorem.
+%    \end{proof}
+
+
+
+\section{Solution for sub-problem 1}
+\subsection{Analysis and Assumptions}
+In this sub-problem, our goal is to analyse the film preference model for a specific user. Due to the fact that this sub-problem's target object are some specified individuals, we assume that this sub-problem is meant to exhibit the basic preference for each user. In other words, our ultimate output of this goal is giving out each user's subjective film favor. Thus, there is no need to calculate and deduce the overall preference of all users. The most fundamental idea is to simply add the user's rate together and calculate the average value to represent his or her preference. 
+
+Nonetheless, when we recall the actual rating situation: one film may score an abnormal average lower score under thousands of rates due to various reasons(actors, directors, backgrounds, etc), although, its theme satisfies one particular user's favor well. In this degree, we assume that if a film's average score is low whereas our target user gives a "High Five" for it, the reason lies on he or her \textit{is fascinated by} the films' theme. Therefore, the model should reflect this idea and gives a heavier weight when this situation occur. In addition, the summation of user's preference on film themes should be one, which means a normalization operation. 
+
+According to analysis above, we summarize our assumptions as below:
+\begin{itemize}
+\item \textbf{Assumption 1-1:} The user's preference has nothing to do with his or her age, occupation, merely depend on his or her history rating results.
+
+\item \textbf{Assumption 1-2:} The higher the ratio between the user's score to a film and its average score, the deeper the user prefers it.
+
+\item\textbf{Assumption 1-3:} The summation of one individual's preference on all the themes should be 1.
+\end{itemize} 
+
+\subsection{Models}
+Suppose we have the film set $F=(f_{1},f_{2},\ldots,f_{n})$, which collects all the films mentioned in the dataset and $U=(u_{1},u_{2},\ldots,u_{m})$ to denote user set. For each rating record, it is merely a dual function between $U$ and $F$, we define $R(i,j)$ is user $u_{i}'s$ rate to film $f_{j}$. 
+
+\begin{equation}
+R(i,j)=\begin{cases}
+0&\text{no rating record in dataset from $u_{i}$ to $m_{j}$},\\
+score&
+\text{exist rating record in dataset from $u_{i}$ to $m_{j}$}.
+\end{cases}
+\end{equation}
+
+First, we calculate the general average score $Avg_{f_{j}}$ for each film in film set. 
+\begin{equation}
+AVG(f_{j})=\sum^{m}_{i=1}\dfrac{R(i,j)}{count(R(i,j)\neq0)}
+\end{equation}
+Then, we calculate the summation of "scaled-version" rate score multiplied  by a film-style "mask-vector" $S(f_{j})$, a $s-$ length binary vector defined in file:$u.item$(in this case s equals to 18):
+\begin{equation}
+UFEAT(u_{i})'=\sum^{n}_{j=1}\dfrac{S(f_{j})*R(i,j)}{AVG(f_{j})}
+\end{equation}
+After normalized the summation of each dimension in $UFEAT(u_{i})'$ to 1, just as mentioned in\textbf{Assumption 1-3}, we seize the answer in this sub-problem: $UFEAT(u_{i})$. 
+
+\subsection{Experiment Result}
+The matrix for specialized 10 people(108, 133, 228, 232, 336, 338, 545, 613, 696, 777) can been seen in table 1: for a particular user, we quantify his or her film favor in a column. For example, user 108 prefers Drama(0.18) at most, and we can deduce that user 108 has never rate and appreciate Fantasy, Film-Noir and Horror films(their indexes are zero). In addition, we visualize the answer for user 108 and user 133 in figure 1.
+\begin{table}
+\begin{tabular}{rrrrrrrrrrr}
+
+           &        108 &        133 &        228 &        232 &        336 &        338 &        545 &        613 &        696 &        777  \\  \hline
+
+    Action &      0.13  &      0.12  &      0.06  &      0.08  &      0.08  &      0.03  &      0.20  &      0.10  &      0.06  &      0.06  \\
+
+ Adventure &      0.08  &      0.05  &      0.08  &      0.04  &      0.04  &      0.02  &      0.13  &      0.05  &      0.03  &      0.02  \\
+
+ Animation &      0.01  &      0.00  &      0.00  &      0.01  &      0.00  &      0.03  &      0.03  &      0.02  &      0.00  &      0.01  \\
+
+  Children &      0.02  &      0.07  &      0.05  &      0.03  &      0.02  &      0.01  &      0.05  &      0.02  &      0.00  &      0.01  \\
+
+    Comedy &      0.12  &      0.11  &      0.06  &      0.12  &      0.44  &      0.21  &      0.11  &      0.09  &      0.04  &      0.22  \\
+
+     Crime &      0.02  &      0.03  &      0.02  &      0.03  &      0.03  &      0.02  &      0.02  &      0.07  &      0.08  &      0.04  \\
+
+Documentary &      0.00  &      0.00  &      0.00  &      0.01  &      0.00  &      0.00  &      0.00  &      0.00  &      0.00  &      0.00  \\
+
+     Drama &      0.18  &      0.19  &      0.38  &      0.29  &      0.12  &      0.22  &      0.08  &      0.25  &      0.38  &      0.32  \\
+
+   Fantasy &      0.00  &      0.02  &      0.00  &      0.01  &      0.00  &      0.00  &      0.01  &      0.00  &      0.00  &      0.00  \\
+
+ Film-Noir &      0.00  &      0.00  &      0.00  &      0.01  &      0.00  &      0.03  &      0.00  &      0.02  &      0.02  &      0.00  \\
+
+    Horror &      0.00  &      0.01  &      0.03  &      0.00  &      0.01  &      0.01  &      0.04  &      0.01  &      0.04  &      0.02  \\
+
+  Musician &      0.03  &      0.00  &      0.00  &      0.04  &      0.01  &      0.01  &      0.03  &      0.00  &      0.00  &      0.01  \\
+
+   Mystery &      0.02  &      0.05  &      0.01  &      0.02  &      0.01  &      0.06  &      0.01  &      0.02  &      0.10  &      0.01  \\
+
+   Romance &      0.14  &      0.09  &      0.11  &      0.13  &      0.13  &      0.16  &      0.06  &      0.09  &      0.07  &      0.06  \\
+
+    Sci-Fi &      0.08  &      0.08  &      0.02  &      0.06  &      0.03  &      0.03  &      0.09  &      0.08  &      0.00  &      0.03  \\
+
+  Thriller &      0.08  &      0.12  &      0.06  &      0.05  &      0.05  &      0.09  &      0.08  &      0.09  &      0.11  &      0.10  \\
+
+       War &      0.07  &      0.05  &      0.11  &      0.07  &      0.01  &      0.06  &      0.05  &      0.07  &      0.08  &      0.10  \\
+
+   Western &      0.00  &      0.00  &      0.00  &      0.01  &      0.02  &      0.01  &      0.02  &      0.02  &      0.00  &      0.00  \\
+
+\end{tabular}
+\caption{The analytical result for specific users' preference}  
+\end{table}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=12cm]{/figure/fig1.pdf}
+\caption{The rader figure of two user preference} \label{fig:1}
+\end{figure}
+
+\section{Solution for sub-problem 2}
+\subsection{Analysis and Assumptions}
+In sub-problem 2, the demand is even more critical: we need to exploit the internal information for each film and eventually implement the function of recommend five books for specific users. In this aspect, our model is implemented in two steps: the first step is to modelling film datasets; the second is to explore the relationship between film model and user model with the aid of rating records.
+
+First, let us consider the film-modelling task, which is similar as the one in sub-problem 1. In order to simplify the model, we give such an assumption:
+
+\begin{itemize}
+\item \textbf{Assumption 2-1:} Each film can been appreciated from the following angles for a single individual separately: personal preference, age and occupation.
+\end{itemize} 
+
+
+We construct three relationships between film and personal characteristics: film-theme favor, film-age and film-occupation. The first relationship is calculated as a "user-preference weight score".
+For a particular film $f_{j}$, we deduce its film-theme favor as follow:
+\begin{equation}
+FFEAT(f_{j})_{favor}=\dfrac {\sum ^{m}_{i=1}S\left( f_{j}\right) \times R\left( i,j\right) \times UFEAT\left( u_{i}\right) }{\sum ^{m}_{i=1}UFEAT\left( u_{i}\right) }
+\end{equation}
+In order to seize film-age feature, we manually divide ages into six parts:0~16, 17~24, 25~32, 33~40, 41~48 and over 49, indexed from 1 to 6. The film-age feature is then calculated by simply counting the average rating scores in each age groups and finally we are able to get the 6-dimension feature: $FFEAT(f_{j})_{age}$. The same idea is applied on acquiring $FFEAT(f_{j})_{occupation}$, a 21-dimension vector(the number of occupation provided in $u.data$ is 21. Finally, we combine $FFEAT(f_{j})_{favor}, FFEAT(f_{j})_{age}, FFEAT(f_{j})_{occupation}$ together as $FFEAT(f_{j})$, which is the model of all films. 
+
+The second task is explore the internal relationship between user feature and film feature, which is the core of the whole system. We give a assumption as following:
+\begin{itemize}
+\item \textbf{Assumption 2-2:} A pair of rating score $R(u_{i},f_{j})$ is a predictable result corresponding with both user feature: $UUFEAT(u_{i})$ and film feature: $FFEAT(f_{j})$. 
+\end{itemize} 
+\subsection{Models}
+We employee two heated Machine Learning model to construct our model. And compare the performance with the traditional Collaborative Filtering Algorithm[cite]. We introduce them one-by-one in each subsection.
+\subsubsection{Support Vector Machine regression}
+\subsubsection{Classification and Regression Tree}
+\subsubsection{Collaborative Filtering Algorithm}
+
+\subsection{Experiment Result}
+
+
+\section{Solution for sub-problem 3}
+\subsection{Analysis and Assumptions}
+\subsection{Models}
+\subsection{Experiment Result}
+
+
+\section{Conclusion}
