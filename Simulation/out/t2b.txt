@@ -1,60 +1,60 @@
 Userid: 108:
-Film Id: 1122 predicted score:4.9262
-Film Id: 814 predicted score:4.9244
-Film Id: 1201 predicted score:4.8488
-Film Id: 1536 predicted score:4.7516
-Film Id: 1293 predicted score:4.5064
+Film Id: 814 predicted score:5.3837
+Film Id: 1201 predicted score:5.3081
+Film Id: 1122 predicted score:4.9761
+Film Id: 1536 predicted score:4.8043
+Film Id: 1293 predicted score:4.5755
 Userid: 133:
-Film Id: 1122 predicted score:4.9699
-Film Id: 814 predicted score:4.9573
-Film Id: 1201 predicted score:4.8815
-Film Id: 1536 predicted score:4.7079
-Film Id: 1293 predicted score:4.5596
+Film Id: 1122 predicted score:5.0261
+Film Id: 814 predicted score:5.025
+Film Id: 1201 predicted score:4.9492
+Film Id: 1536 predicted score:4.7916
+Film Id: 1293 predicted score:4.6294
 Userid: 228:
-Film Id: 1653 predicted score:4.7518
-Film Id: 1599 predicted score:4.076
-Film Id: 1536 predicted score:3.7822
-Film Id: 1398 predicted score:3.7807
-Film Id: 1467 predicted score:3.7434
+Film Id: 1653 predicted score:4.8226
+Film Id: 1599 predicted score:4.1469
+Film Id: 1467 predicted score:3.9926
+Film Id: 1594 predicted score:3.9886
+Film Id: 1536 predicted score:3.8258
 Userid: 232:
-Film Id: 1201 predicted score:4.9374
-Film Id: 1536 predicted score:4.8859
-Film Id: 1122 predicted score:4.8652
-Film Id: 814 predicted score:4.8242
-Film Id: 1599 predicted score:4.6653
+Film Id: 1201 predicted score:4.9919
+Film Id: 1536 predicted score:4.9518
+Film Id: 1122 predicted score:4.912
+Film Id: 814 predicted score:4.8787
+Film Id: 1599 predicted score:4.7434
 Userid: 336:
-Film Id: 1467 predicted score:4.0233
-Film Id: 1599 predicted score:3.731
-Film Id: 1189 predicted score:3.6684
-Film Id: 1536 predicted score:3.408
-Film Id: 1492 predicted score:3.379
+Film Id: 1467 predicted score:4.0908
+Film Id: 1599 predicted score:3.8075
+Film Id: 1189 predicted score:3.7232
+Film Id: 1536 predicted score:3.4807
+Film Id: 1594 predicted score:3.3989
 Userid: 338:
-Film Id: 1536 predicted score:4.8474
-Film Id: 1201 predicted score:4.7895
-Film Id: 1599 predicted score:4.7258
-Film Id: 814 predicted score:4.6687
-Film Id: 1122 predicted score:4.6504
+Film Id: 1536 predicted score:4.8951
+Film Id: 1201 predicted score:4.8449
+Film Id: 1599 predicted score:4.8054
+Film Id: 814 predicted score:4.7241
+Film Id: 1122 predicted score:4.6906
 Userid: 545:
-Film Id: 814 predicted score:4.3245
-Film Id: 1122 predicted score:4.2055
-Film Id: 1189 predicted score:4.1565
-Film Id: 1467 predicted score:3.9697
-Film Id: 1500 predicted score:3.8912
+Film Id: 814 predicted score:4.3884
+Film Id: 1122 predicted score:4.2495
+Film Id: 1467 predicted score:4.2378
+Film Id: 1189 predicted score:4.2147
+Film Id: 1293 predicted score:3.9502
 Userid: 613:
-Film Id: 1536 predicted score:4.8601
-Film Id: 1201 predicted score:4.8371
-Film Id: 1122 predicted score:4.809
-Film Id: 814 predicted score:4.7916
-Film Id: 1293 predicted score:4.5818
+Film Id: 1536 predicted score:4.918
+Film Id: 1201 predicted score:4.888
+Film Id: 1122 predicted score:4.8509
+Film Id: 814 predicted score:4.8425
+Film Id: 1293 predicted score:4.6415
 Userid: 696:
-Film Id: 1201 predicted score:4.87
-Film Id: 1122 predicted score:4.7551
-Film Id: 1536 predicted score:4.7507
-Film Id: 814 predicted score:4.6808
-Film Id: 1293 predicted score:4.5419
+Film Id: 1201 predicted score:4.9422
+Film Id: 1536 predicted score:4.8192
+Film Id: 1122 predicted score:4.8121
+Film Id: 814 predicted score:4.7529
+Film Id: 1293 predicted score:4.6233
 Userid: 777:
-Film Id: 1201 predicted score:4.95
-Film Id: 1122 predicted score:4.9077
-Film Id: 1536 predicted score:4.9001
-Film Id: 814 predicted score:4.8915
-Film Id: 1599 predicted score:4.5115
+Film Id: 1201 predicted score:4.9848
+Film Id: 814 predicted score:4.9263
+Film Id: 1122 predicted score:4.9224
+Film Id: 1536 predicted score:4.9125
+Film Id: 1599 predicted score:4.629
