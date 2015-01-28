@@ -10,8 +10,12 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Classification and Regression Tree}{9}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Collaborative Filtering Algorithm}{9}{subsubsection.3.2.3}
 \contentsline {subsection}{\numberline {3.3}Experiment Result}{9}{subsection.3.3}
-\contentsline {section}{\numberline {4}Solution for sub-problem 3}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Analysis and Assumptions}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Models}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Experiment Result}{10}{subsection.4.3}
-\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}
+\contentsline {section}{\numberline {4}Solution for sub-problem 3}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Analysis and Assumptions}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Models}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Experiment Result}{11}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{11}{section.5}
+\contentsline {section}{Appendices}{12}{section*.1}
+\contentsline {section}{Appendix \numberline {A}Codes}{12}{Appendix.a.A}
+\contentsline {subsection}{\numberline {A.1}Codes for sub-problem 1}{12}{subsection.a.A.1}
+\contentsline {subsection}{\numberline {A.2}Codes for sub-problem 2, 3}{13}{subsection.a.A.2}

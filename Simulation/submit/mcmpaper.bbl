@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{adomavicius2005toward}
+Gediminas Adomavicius and Alexander Tuzhilin.
+\newblock Toward the next generation of recommender systems: A survey of the
+  state-of-the-art and possible extensions.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  17(6):734--749, 2005.
+
+\bibitem{bennett2007netflix}
+James Bennett and Stan Lanning.
+\newblock The netflix prize.
+\newblock In {\em Proceedings of KDD cup and workshop}, volume 2007, page~35,
+  2007.
+
+\bibitem{breese1998empirical}
+John~S Breese, David Heckerman, and Carl Kadie.
+\newblock Empirical analysis of predictive algorithms for collaborative
+  filtering.
+\newblock In {\em Proceedings of the Fourteenth conference on Uncertainty in
+  artificial intelligence}, pages 43--52. Morgan Kaufmann Publishers Inc.,
+  1998.
+
+\bibitem{chang2011libsvm}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock Libsvm: a library for support vector machines.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  2(3):27, 2011.
+
+\bibitem{chung2003radius}
+Kai-Min Chung, Wei-Chun Kao, Chia-Liang Sun, Li-Lun Wang, and Chih-Jen Lin.
+\newblock Radius margin bounds for support vector machines with the rbf kernel.
+\newblock {\em Neural Computation}, 15(11):2643--2681, 2003.
+
+\bibitem{hane1993pearson}
+Bernhard~G H{\"a}ne, Kathrin J{\"a}ger, and Hans~G Drexler.
+\newblock The pearson product-moment correlation coefficient is better suited
+  for identification of dna fingerprint profiles than band matching algorithms.
+\newblock {\em Electrophoresis}, 14(1):967--972, 1993.
+
+\bibitem{jung2012attribute}
+Jason~J Jung.
+\newblock Attribute selection-based recommendation framework for short-head
+  user group: An empirical study by movielens and imdb.
+\newblock {\em Expert Systems with Applications}, 39(4):4049--4054, 2012.
+
+\bibitem{lewis2000introduction}
+Roger~J Lewis.
+\newblock An introduction to classification and regression tree (cart)
+  analysis.
+\newblock In {\em Annual Meeting of the Society for Academic Emergency Medicine
+  in San Francisco, California}, pages 1--14. Citeseer, 2000.
+
+\bibitem{linden2003amazon}
+Greg Linden, Brent Smith, and Jeremy York.
+\newblock Amazon. com recommendations: Item-to-item collaborative filtering.
+\newblock {\em Internet Computing, IEEE}, 7(1):76--80, 2003.
+
+\bibitem{miller2003movielens}
+Bradley~N Miller, Istvan Albert, Shyong~K Lam, Joseph~A Konstan, and John
+  Riedl.
+\newblock Movielens unplugged: experiences with an occasionally connected
+  recommender system.
+\newblock In {\em Proceedings of the 8th international conference on
+  Intelligent user interfaces}, pages 263--266. ACM, 2003.
+
+\bibitem{suykens1999least}
+Johan~AK Suykens and Joos Vandewalle.
+\newblock Least squares support vector machine classifiers.
+\newblock {\em Neural processing letters}, 9(3):293--300, 1999.
+
+\bibitem{zheng2010clicks}
+Hua Zheng, Dong Wang, Qi~Zhang, Hang Li, and Tinghao Yang.
+\newblock Do clicks measure recommendation relevancy?: an empirical user study.
+\newblock In {\em Proceedings of the fourth ACM conference on Recommender
+  systems}, pages 249--252. ACM, 2010.
+
+\end{thebibliography}
