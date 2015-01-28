@@ -136,15 +136,160 @@ The second task is explore the internal relationship between user feature and fi
 \begin{itemize}
 \item \textbf{Assumption 2-2:} A pair of rating score $R(u_{i},f_{j})$ is a predictable result corresponding with both user feature: $UUFEAT(u_{i})$ and film feature: $FFEAT(f_{j})$. 
 \end{itemize} 
+
+Meanwhile, another perspective of this sub-problem is the state-of-the-art method: collaborative filtering algorithm, a user-angle approach. The basic idea is that we can always find the similar class users groups by comparing \textit{"similarity degree"} among user features: $UUFEAT(u{i})$. And we design our recommendation system in another way on the basis on the following assumption:
+\begin{itemize}
+\item \textbf{Assumption 2-3:} Given two users features $UUFEAT(u_{i}), UUFEAT(u_{j})$, if their similarity in quantity is less than one particular threshold given in advance, we can conclude they have similar film preference and should recommend them with counterparts' high-rating films.
+\end{itemize}
+
 \subsection{Models}
-We employee two heated Machine Learning model to construct our model. And compare the performance with the traditional Collaborative Filtering Algorithm[cite]. We introduce them one-by-one in each subsection.
+We employee two heated Machine Learning model to construct our model. And compare the performance with the traditional Collaborative Filtering Algorithm[cite]. We introduce them one-by-one in each subsection. Note that the first two models are based on \textbf{Assumption 2-2} and \textbf{Assumption 2-3}. The last model is a comparing model transplanted from the state-of-the-art.
+
 \subsubsection{Support Vector Machine regression}
+The Support Vector Machine(SVM)[cite] is a classical classifier/regression widely used in machine learning, pattern recognition fields[cite]. The basic idea of SVM is quite similar with the one of Linear Regression. Nevertheless, the extended core idea in SVM is the "maximized-margin" theory: suppose we are trying to find a best separation hyperplane in $\mathbb{R}^{n}$, in SVM theory, the best solution should not only meet up the least error, but also maximize the margin among the hyperplane and all the given points. In other words, the hyperplane is carefully restricted in avoid of over-fitting issues.[cite]
+In figure 2, we provide a simple case in $\mathbb{R}^{2}$: in this case the third column is the better case compared with the first two columns. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=12cm]{/figure/fig2.pdf}
+\caption{A simple case of hyperplane choices in $\mathbb{R}^{2}$} \label{fig:2}
+\end{figure}
+
+By utilize a batch of records as training data(600000) in $u.data$, we have actually acquired a joint feature of $UUFEAT$ and $FFEAT$, denoted as $\textit{X}={x_{i}|i=1,2,3...p}$ and their regression value $\textit{Y}={y_{i}|i=1,2,3...p}$. We train the SVM parameter $w,b$ by minimize following object function:
+\begin{equation}
+\min _{w,b}\sum ^{p}_{i=1}\left( 1-y_{i}\left( w^{T}x_{i}+b\right) \right) +\dfrac {1}{2}w^{T}w
+\end{equation}
+In fact, the upper SVM framework has been perfectly implemented by libsvm[cite], a integral and powerful SVM version in Matlab. We train our SVM model under it with default RBF kernel and some other parameter tuning settings. As long as we have acquired $w,b$, for a giving person $u_{i}$, we can calculate all the feature matches $X_{u_{i}}$ by exhausting all the films in dataset and calculating the potential $Y_{u_{i}}$. Eventually, as the problem required, we give out the top-five films with highest predicted rating score.
+
 \subsubsection{Classification and Regression Tree}
 \subsubsection{Collaborative Filtering Algorithm}
 
 \subsection{Experiment Result}
+The summary of recommendation result for specific user is shown in Table 2 as below.
 
+\begin{longtable}{|c|c|c|c|}
+\hline
+{User ID} & {\bf SVM regression(no scaled score)} & {\bf CRT} & {\bf Collaborative filtering(no scaled score)} \\
+\hline
+\multicolumn{ 1}{|c|}{108} & Film Id: 347 predicted score:4.9245 &            & Film Id: 814 predicted score:5.3837 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 7 predicted score:4.9103 &            & Film Id: 1201 predicted score:5.3081 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 813 predicted score:4.6293 &            & Film Id: 1122 predicted score:4.9761 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 317 predicted score:4.6005 &            & Film Id: 1536 predicted score:4.8043 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 1405 predicted score:4.6005 &            & Film Id: 1293 predicted score:4.5755 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{133} & Film Id: 192 predicted score:4.6002 &            & Film Id: 1122 predicted score:5.0261 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 258 predicted score:4.6002 &            & Film Id: 814 predicted score:5.025 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 193 predicted score:4.6001 &            & Film Id: 1201 predicted score:4.9492 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 64 predicted score:4.6001 &            & Film Id: 1536 predicted score:4.7916 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 357 predicted score:4.6001 &            & Film Id: 1293 predicted score:4.6294 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{228} & Film Id: 1135 predicted score:8.2108 &            & Film Id: 1653 predicted score:4.8226 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 589 predicted score:6.7022 &            & Film Id: 1599 predicted score:4.1469 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 404 predicted score:5.288 &            & Film Id: 1467 predicted score:3.9926 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 14 predicted score:5.1448 &            & Film Id: 1594 predicted score:3.9886 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 742 predicted score:5.0866 &            & Film Id: 1536 predicted score:3.8258 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{232} & Film Id: 56 predicted score:4.6005 &            & Film Id: 1201 predicted score:4.9919 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 1149 predicted score:4.6002 &            & Film Id: 1536 predicted score:4.9518 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 923 predicted score:4.6002 &            & Film Id: 1122 predicted score:4.912 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 48 predicted score:4.6002 &            & Film Id: 814 predicted score:4.8787 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 170 predicted score:4.6002 &            & Film Id: 1599 predicted score:4.7434 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{336} & Film Id: 204 predicted score:4.6004 &            & Film Id: 1467 predicted score:4.0908 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 153 predicted score:4.6003 &            & Film Id: 1599 predicted score:3.8075 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 216 predicted score:4.6002 &            & Film Id: 1189 predicted score:3.7232 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 42 predicted score:4.6002 &            & Film Id: 1536 predicted score:3.4807 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 762 predicted score:4.6002 &            & Film Id: 1594 predicted score:3.3989 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{338} & Film Id: 603 predicted score:4.6005 &            & Film Id: 1536 predicted score:4.8951 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 663 predicted score:4.6005 &            & Film Id: 1201 predicted score:4.8449 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 170 predicted score:4.6003 &            & Film Id: 1599 predicted score:4.8054 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 408 predicted score:4.6003 &            & Film Id: 814 predicted score:4.7241 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 197 predicted score:4.6002 &            & Film Id: 1122 predicted score:4.6906 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{545} & Film Id: 238 predicted score:5.5413 &            & Film Id: 814 predicted score:4.3884 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 121 predicted score:4.6002 &            & Film Id: 1122 predicted score:4.2495 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 257 predicted score:4.6001 &            & Film Id: 1467 predicted score:4.2378 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 472 predicted score:4.6001 &            & Film Id: 1189 predicted score:4.2147 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 230 predicted score:4.6001 &            & Film Id: 1293 predicted score:3.9502 \\
 
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{613} & Film Id: 194 predicted score:4.6004 &            & Film Id: 1536 predicted score:4.918 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 178 predicted score:4.6002 &            & Film Id: 1201 predicted score:4.888 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 887 predicted score:4.6002 &            & Film Id: 1122 predicted score:4.8509 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 750 predicted score:4.6001 &            & Film Id: 814 predicted score:4.8425 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 357 predicted score:4.6001 &            & Film Id: 1293 predicted score:4.6415 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{696} & Film Id: 258 predicted score:4.9815 &            & Film Id: 1201 predicted score:4.9422 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 276 predicted score:4.6344 &            & Film Id: 1536 predicted score:4.8192 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 9 predicted score:4.6002 &            & Film Id: 1122 predicted score:4.8121 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 166 predicted score:4.6001 &            & Film Id: 814 predicted score:4.7529 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 134 predicted score:4.6001 &            & Film Id: 1293 predicted score:4.6233 \\
+\hline
+           &            &            &            \\
+\hline
+\multicolumn{ 1}{|c|}{777} & Film Id: 880 predicted score:4.6005 &            & Film Id: 1201 predicted score:4.9848 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 168 predicted score:4.6004 &            & Film Id: 814 predicted score:4.9263 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 56 predicted score:4.5999 &            & Film Id: 1122 predicted score:4.9224 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 87 predicted score:4.5999 &            & Film Id: 1536 predicted score:4.9125 \\
+\hline
+\multicolumn{ 1}{|c|}{} & Film Id: 117 predicted score:4.5997 &            & Film Id: 1599 predicted score:4.629 \\
+\hline
+\caption{Recommendation result with RAW score under three models.}
+\end{longtable}  
 \section{Solution for sub-problem 3}
 \subsection{Analysis and Assumptions}
 \subsection{Models}
