@@ -162,25 +162,23 @@ One particular special step in this model is to calculate the similarity between
 
 \begin{longtable}{|r|r|r|r|r|r|r|}
 \hline
-           & technician &      other &     writer &  executive & administrator &    student \\
+           & technician &   other &  writer &  executive & administrator &  student \\
 \hline
-technician &      1.00  &      0.13  &      0.13  &      0.14  &      0.13  &      0.12  \\
+technician &      1.00  &   0.13  &    0.13  &    0.14  &    0.13  &    0.12  \\
 \hline
-     other &      0.13  &      0.13  &      0.13  &      0.13  &      0.13  &      0.13  \\
+     other &      0.13  &   0.13  &    0.13  &    0.13  &    0.13  &    0.13  \\
 \hline
-    writer &      0.13  &      0.13  &      1.00  &      0.16  &      0.16  &      0.10  \\
+    writer &      0.13  &   0.13  &    1.00  &    0.16  &    0.16  &    0.10  \\
 \hline
- executive &      0.14  &      0.13  &      0.16  &      1.00  &      0.10  &      0.16  \\
+ executive &      0.14  &   0.13  &    0.16  &    1.00  &    0.10  &    0.16  \\
 \hline
-administrator &      0.13  &      0.13  &      0.16  &      0.10  &      1.00  &      0.13  \\
+administrator &   0.13  &   0.13  &   0.16  &     0.10  &    1.00  &    0.13  \\
 \hline
-   student &      0.12  &      0.13  &      0.10  &      0.16  &      0.13  &      1.00  \\
+   student &      0.12  &   0.13  &   0.10  &     0.16  &    0.13  &    1.00  \\
 \hline
 \caption{A part of the occupation similarity matrix.}
-Finally, we re-rate all the films in the dataset by the Perason coefficient-weighted sum of all users rates in $u.data$ and sort the top five rating films as result.
-
 \end{longtable}  
-
+Finally, we re-rate all the films in the dataset by the Perason coefficient-weighted sum of all users rates in $u.data$ and sort the top five rating films as result.
 
 \subsection{Experiment Result}
 The summary of recommendation result for specific user is shown in Table 3 as below.
