@@ -1,0 +1,60 @@
+Userid: 108:
+Film Id: 23
+Film Id: 28
+Film Id: 49
+Film Id: 55
+Film Id: 60
+Userid: 133:
+Film Id: 12
+Film Id: 135
+Film Id: 141
+Film Id: 144
+Film Id: 150
+Userid: 228:
+Film Id: 3
+Film Id: 23
+Film Id: 30
+Film Id: 115
+Film Id: 127
+Userid: 232:
+Film Id: 19
+Film Id: 47
+Film Id: 56
+Film Id: 57
+Film Id: 91
+Userid: 336:
+Film Id: 8
+Film Id: 64
+Film Id: 69
+Film Id: 70
+Film Id: 93
+Userid: 338:
+Film Id: 6
+Film Id: 7
+Film Id: 8
+Film Id: 12
+Film Id: 68
+Userid: 545:
+Film Id: 1
+Film Id: 45
+Film Id: 93
+Film Id: 96
+Film Id: 98
+Userid: 613:
+Film Id: 51
+Film Id: 64
+Film Id: 69
+Film Id: 70
+Film Id: 88
+Userid: 696:
+Film Id: 4
+Film Id: 6
+Film Id: 7
+Film Id: 59
+Film Id: 61
+Userid: 777:
+Film Id: 8
+Film Id: 44
+Film Id: 64
+Film Id: 87
+Film Id: 95
