@@ -1,19 +1,20 @@
 
 %======================问题介绍====================================
 \section{Introduction}
-With the rapid progress in information technology, people have entered into the epoch with overloaded information. From the prospective of the content provider, it is urgent and necessary to provide accurate and specific information to a particular user, mostly corresponding with his or her personal information and browsing records. Such an system is commonly considered as a automatic recommendation based on data mining, machine learning and statistic models\cite{adomavicius2005toward}. The most well-known and powerful applications of such system in industry fields include Amazon's goods recommendation system, Hulu and NetFlix's film recommendation platform, etc. Actually, no matter we have realized or not, we are experiencing this technology every day. 
+With the rapid progress in information technology, people have entered into the epoch with overloaded information. From the prospective of the content provider, it is urgent and necessary to provide accurate and specific information to a particular user, mostly corresponding with his or her personal information and browsing records. Such an system is commonly considered as a automatic recommendation based on data mining, machine learning and statistic models\cite{adomavicius2005toward}. The most well-known and powerful applications of such system in industry fields include Amazon's goods recommendation system\cite{linden2003amazon}, Hulu\cite{bennett2007netflix} and NetFlix's\cite{zheng2010clicks} film recommendation platform, etc. Actually, no matter we have realized or not, we are experiencing this technology every day. 
 
-In this problem, we are generally required to implement such a film recommendation system based on MovieLens[cite] dataset. The MovieLens dataset provides us with 100,000 records of users' rates to over 1,000 films ranging from 1 to 5. In addition, it offers us with users' fundamental personal identities: ages and occupation. Besides, each films are classified into 19 different themes(romantic, drama, comedy...). On the basis of these information, the problem requires us to realize the following three sub-goals.
+In this problem, we are generally required to implement such a film recommendation system based on MovieLens \cite{miller2003movielens} dataset. The MovieLens dataset provides us with 100,000 records of users' rates to over 1,000 films ranging from 1 to 5. In addition, it offers us with users' fundamental personal identities: ages and occupation. Besides, each films are classified into 19 different themes(romantic, drama, comedy...). On the basis of these information, the problem requires us to realize the following three sub-goals.
 \begin{itemize}
 \item \textbf{Sub-problem 1:} Establish the users' film favor in mathematical models and analyse some particular users' film characteristic. 
 \item \textbf{Sub-problem 2:} Establish the films' theme models and combine with models in Sub-problem 1 to recommend 5 films for users mentioned above.  
 \item\textbf{ Sub-problem 3:} Realize a recommendation system for new users with only register information.
 \end{itemize} 
 
-We solve sub-problem 1 by modelling users' feature and films' feature and analysing the relationship between them. In sub-problem 2 and 3, we furthermore try to determine the analytical numerical model between the combination of users, film feature and the final rating score by SVM and C\&RT. Finally we test and compare our model with state-of-the-art: collaborative filtering algorithm.
+We solve sub-problem 1 by modelling users' feature and films' feature and analysing the relationship between them. In sub-problem 2 and 3, we furthermore try to determine the analytical numerical model between the combination of users, film feature and the final rating score by SVM and C\&RT\cite{lewis2000introduction}. Finally we test and compare our model with state-of-the-art: collaborative filtering algorithm.
 
 The structure of the paper is organized by three sub-problems, respectively. In each sub-problem, we give our own assumptions, models and experiment results. The final conclusion is given in section 5. The codes and are shown in Appendix. 
 
+\section{Symbol Descriptions}
 \section{Solution for sub-problem 1}
 \subsection{Analysis and Assumptions}
 In this sub-problem, our goal is to analyse the film preference model for a specific user. Due to the fact that this sub-problem's target object are some specified individuals, we assume that this sub-problem is meant to exhibit the basic preference for each user. In other words, our ultimate output of this goal is giving out each user's subjective film favor. Thus, there is no need to calculate and deduce the overall preference of all users. The most fundamental idea is to simply add the user's rate together and calculate the average value to represent his or her preference. 
@@ -50,9 +51,10 @@ UFEAT(u_{i})'=\sum^{n}_{j=1}\dfrac{S(f_{j})*R(i,j)}{AVG(f_{j})}
 \end{equation}
 After normalized the summation of each dimension in $UFEAT(u_{i})'$ to 1, just as mentioned in\textbf{Assumption 1-3}, we seize the answer in this sub-problem: $UFEAT(u_{i})$. 
 
-\subsection{Experiment Result}
+\subsection{Experiment Result and Analysis}
 The matrix for specialized 10 people(108, 133, 228, 232, 336, 338, 545, 613, 696, 777) can been viewed in table 1: for a particular user, we quantify his or her film favor in a column. For example, user 108 prefers Drama(0.18) at most, and we can deduce that user 108 has never rate and appreciate Fantasy, Film-Noir and Horror films(their indexes are zero). In addition, we visualize the answer for user 108 and user 133 in figure 1.
 \begin{table}
+\caption{The analytical result for specific users' preference} 
 \begin{tabular}{rrrrrrrrrrr}
 
            &        108 &        133 &        228 &        232 &        336 &        338 &        545 &        613 &        696 &        777  \\  \hline
@@ -94,8 +96,7 @@ Documentary &      0.00  &      0.00  &      0.00  &      0.01  &      0.00  &  
    Western &      0.00  &      0.00  &      0.00  &      0.01  &      0.02  &      0.01  &      0.02  &      0.02  &      0.00  &      0.00  \\
 
 \end{tabular}
-\caption{The analytical result for specific users' preference}  
-\end{table}
+ \end{table}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=12cm]{/figure/fig1.pdf}
@@ -134,7 +135,7 @@ Meanwhile, another perspective of this sub-problem is the state-of-the-art metho
 We employee two heated Machine Learning model to construct our model. And compare the performance with the traditional Collaborative Filtering Algorithm[cite]. We introduce them one-by-one in each subsection. Note that the first two models are based on \textbf{Assumption 2-2} and \textbf{Assumption 2-3}. The last model is a comparing model transplanted from the state-of-the-art.
 
 \subsubsection{Support Vector Machine regression}
-The Support Vector Machine(SVM)[cite] is a classical classifier/regression widely used in machine learning, pattern recognition fields[cite]. The basic idea of SVM is quite similar with the one of Linear Regression. Nevertheless, the extended core idea in SVM is the "maximized-margin" theory: suppose we are trying to find a best separation hyperplane in $\mathbb{R}^{n}$, in SVM theory, the best solution should not only meet up the least error, but also maximize the margin among the hyperplane and all the given points. In other words, the hyperplane is carefully restricted in avoid of over-fitting issues.[cite]
+The Support Vector Machine(SVM)\cite{suykens1999least} is a classical classifier/regression widely used in machine learning, pattern recognition fields[cite]. The basic idea of SVM is quite similar with the one of Linear Regression. Nevertheless, the extended core idea in SVM is the "maximized-margin" theory: suppose we are trying to find a best separation hyperplane in $\mathbb{R}^{n}$, in SVM theory, the best solution should not only meet up the least error, but also maximize the margin among the hyperplane and all the given points. In other words, the hyperplane is carefully restricted in avoid of over-fitting issues.[cite]
 In figure 2, we provide a simple case in $\mathbb{R}^{2}$: in this case the third column is the better case compared with the first two columns. 
 \begin{figure}[htbp]
 \centering
@@ -150,7 +151,7 @@ In fact, the upper SVM framework has been perfectly implemented by libsvm\cite{c
 
 \subsubsection{Classification and Regression Tree}
 \subsubsection{Collaborative Filtering Algorithm}
-As mentioned in \textbf{Assumption 2-3}, the core idea of collaborative filtering algorithm is to calculate the similarity between any given two users with their features. In this case, we synthesize users' preference feature $UUFEAT(u_{i})$, age and occupation together into a ultimate feature vector $UF(u_{i})$. By calculating the Pearson coefficient\cite{hane1993pearson} between $UF(u_{i}), UF(u_{j})$:
+As mentioned in \textbf{Assumption 2-3}, the core idea of collaborative filtering algorithm\cite{breese1998empirical} is to calculate the similarity between any given two users with their features. In this case, we synthesize users' preference feature $UUFEAT(u_{i})$, age and occupation together into a ultimate feature vector $UF(u_{i})$. By calculating the Pearson coefficient\cite{hane1993pearson} between $UF(u_{i}), UF(u_{j})$:
 \begin{eqnarray}
 sim\left(i,j\right) =\dfrac {1}{n-1}\sum ^{n}_{i=1}\left( \dfrac {UF(u_{i})-\overline {UF(u_{i})}}{S_{UF(u_{i})}}\right) \left( \dfrac {UF(u_{j})-\overline {UF(u_{j})}}{S_{UF(u_{j})}}\right) \\
 where, \overline {X}=\dfrac {1}{n}\sum ^{n}_{i=1}X_{i} \nonumber \\ 
@@ -161,6 +162,7 @@ we are able to quantify the similarity degree between $u_{i}$ and $u_{j}$.
 One particular special step in this model is to calculate the similarity between different jobs, which is normally a non-numerical answer. However, according to the fuzzy theory, we calculate it in semi-quantity form by \textit{Microsoft Bing} search engine: we enter two occupations into search box and take the resultant search items number as their similarity(those items with two mutual occupations). After normalization operation, we achieve Table 2, a symmetric matrix to define occupation similarity.
 
 \begin{longtable}{|r|r|r|r|r|r|r|}
+\caption{A part of the occupation similarity matrix.}\\
 \hline
            & technician &   other &  writer &  executive & administrator &  student \\
 \hline
@@ -176,14 +178,15 @@ administrator &   0.13  &   0.13  &   0.16  &     0.10  &    1.00  &    0.13  \\
 \hline
    student &      0.12  &   0.13  &   0.10  &     0.16  &    0.13  &    1.00  \\
 \hline
-\caption{A part of the occupation similarity matrix.}
 \end{longtable}  
 Finally, we re-rate all the films in the dataset by the Perason coefficient-weighted sum of all users rates in $u.data$ and sort the top five rating films as result.
 
-\subsection{Experiment Result}
+\subsection{Experiment Result and Analysis}
 The summary of recommendation result for specific user is shown in Table 3 as below.
 
+
 \begin{longtable}{|c|c|c|c|}
+\caption{Recommendation result with RAW score under three models.}\\
 \hline
 {User ID} & {\bf SVM regression(no scaled score)} & {\bf CRT} & {\bf Collaborative filtering(no scaled score)} \\
 \hline
@@ -305,7 +308,6 @@ The summary of recommendation result for specific user is shown in Table 3 as be
 \hline
 \multicolumn{ 1}{|c|}{} & Film Id: 117 predicted score:4.5997 &            & Film Id: 1599 predicted score:4.629 \\
 \hline
-\caption{Recommendation result with RAW score under three models.}
 \end{longtable} 
 
 From the table above, we can observe some interesting phenomenon and conclusions. First and foremost, the SVM regression method and Collaborative filtering method give us absolutely different results. In our SVM regression algorithm, we can note that for each person, the recommendation result is quite personalized. When we go on a step further to trace each film by id with $u.item$, we find that they are quite coherence with person's characteristic. To exemplifier this idea, we take User 133 as an instance: user 133 is a 53-year-old engineer; our SVM recommendation system presents film 347(comedy and drama), film 7(drama and sci-fi), film 813(documentary), etc as results. According to our experience, the results are quite coherent with the identity of a middle-age engineer. 
@@ -315,12 +317,12 @@ However, when we scan over the results generated by collaborative filtering mode
 \section{Solution for sub-problem 3}
 \subsection{Analysis and Assumptions}
 \subsection{Models}
-\subsection{Experiment Result}
+\subsection{Experiment Result and Analysis}
 
 
 \section{Conclusion}
 In this paper, we successfully implement a automatic film recommendation based on MovieLens dataset. We analysis both users' models and films' models based on the dataset and people's own experience in film-rating experiences. Furthermore, we exploit the deeper relationship between users' models and the films' one; by employing SVM regression model, we beat the collaborative filtering algorithm, the state-of-the-art in default parameter settings. In the further research, we will polish up our system by some other popular and powerful statistical models, such as Convolution Neural Network(CNN)[cite], a powerful weapon in deep learning fields and evaluate their performance with our present framework.
-
+\bibliography{cites}
 \begin{appendices}
 \section{Codes}
 \subsection{Codes for sub-problem 1}
