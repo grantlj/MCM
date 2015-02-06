@@ -1,0 +1,9 @@
+virus assumption：
+只考虑一种病毒没有变异；
+
+1。 理想情况下，埃博拉的传播模型；（传染性；传播途径；人口密度；已经传染人数；未传染人数，死亡人数；）
+
+region：assumption：
+2. 埃博拉-region模型；
+
+3. 第三问的药物投送：发达国家生产；运到西非的某个机场（图论选择），感染国家：治疗station；未感染国家：vaccine station（药物的分配，需要建立一个国家intection factor：感染风险系数）‘

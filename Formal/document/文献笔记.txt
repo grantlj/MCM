@@ -1,0 +1,35 @@
+WHO_IVB_14.08_eng:
+世界卫生组织关于免疫Ebola的指南：
+埃博拉：人人传播，direct contact（体液），接触性传播，不会空气传播。
+潜伏期2-21天：不会有症状，但是已经具有传染性，因此医护人员就很容易感染（检查病人的时候）
+世界卫生组织建议：个人防护器材，监视ｃｏｎｔａｃｔｉｎｇ，较好的实验室条件，安全等级。
+核心ｉｄｅａ１：他把那些国家分成了：ｎｏｔ　ａｆｆｅｃｔｅｄ　和　ａｆｆｅｃｔｅｄ（这个ｉｄｅａ可以参考）
+ｎｏｔ　ａｆｆｅｃｔｅｄ：不需要特别的防护措施；不需要特别的虎屋监控措施
+
+ａｆｆｅｃｔｅｄ：带来循环效应，埃博拉一出来，整个国家的卫生系统就瘫痪了（各种惊慌什么的），这个时候反而是最容易感染的时候。
+建议：防止大规模聚集：暂停疫苗投放。（ｄｅｌｉｖｅｒｙ　ｓｙｓｔｅｍ）在注射的时候一定要询问情况，核对有没有症状，不要接种疑似病例。高温焚烧处理。
+
+核心ｉｄｅａ２：是不是可以对一些国家按照一些参数来拟合一个传染风险模型：这个国家有多大的风险被感染。（人口　地理位置　国土面积　易感染人群　牲畜　医疗水平　疫苗接种情况）
+尼日利亚和塞内加尔是第一个传播国家，但是他们蔡旭了一系列措施，凷已经ｃｌｅａｒ掉了：
+采取的措施：未感染地区正常接种；感染的立刻隔离；稳定民心；
+
+可能的风险国家：
+Cote d’Ivoire, Guinea Bissau, Mali, Senegal, Benin, Cameroon, Central African Republic, Democratic Republic of Congo, Gambia, Ghana, Mauritania, Nigeria, South Sudan, and Togo
+
+ＥｂｏｌａＲｅｓｐｏｎｓｅＲｏａｄＭａｐ：
+
+Guinea, Liberia, and Sierra Leone　２０１４年的危机国家。
+
+给了很多ａｓｓｕｍｐｔｉｏｎ：
+１.基于各种原因很多地方传染的强度是真实报告的２－４倍都不止；
+２.对于未感染的国家，我们假设：
+This plan recognizes that a number of currently unaffected countries could be exposed to EVD, but assumes that the emergency application of the standard control strategies will stop any new transmission within 8 weeks of the index case.
+虽然暴露了，但是现有的策略会在８周内阻止新的传播；
+
+３.　疾病的控制：实验室资源；人力资源；反映邓丽；公共基础设施建设；应急控制训练；
+
+４.　空运能力需要在２周内解决。
+
+Ｒｏａｄｍａｐ：１.地理上全方位覆盖高感染和已经感染的地区；
+２.　解决非全方位覆盖的，ｉｎｉｔｉａｌ的地区
+３. 加强非感染国家（with hub，without hub）
