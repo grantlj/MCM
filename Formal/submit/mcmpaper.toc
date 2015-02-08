@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {section}{\numberline {2}Sub-model 1: The dispersal of the Azrael in ideal cases}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Symbols and Notations}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Analysis and Assumptions}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Model Description}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Experiment Result}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Strengths and Weaknesses}{7}{subsection.2.5}
+\contentsline {section}{\numberline {3}Sub-model 2: Improved EVD dynamic dispersal model}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Symbols and Notations}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Analysis and Assumptions}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Model Description}{11}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}General Model}{11}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Objective Condition Model}{11}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}S-P Transition Model}{12}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}A-D Transition Model}{13}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}P-A Transition Model}{13}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}P-R Transition Model}{14}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}S-R Transition Model}{14}{subsubsection.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.8}Medication Demand and EWS Model}{15}{subsubsection.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.9}Transport Optimization}{15}{subsubsection.3.3.9}
+\contentsline {subsection}{\numberline {3.4}Experiment Result}{15}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Strengths and Weaknesses}{15}{subsection.3.5}
+\contentsline {section}{\numberline {4}Conclusion}{15}{section.4}
+\contentsline {section}{Appendices}{15}{section*.2}
+\contentsline {section}{Appendix \numberline {A}Codes}{15}{Appendix.a.A}
