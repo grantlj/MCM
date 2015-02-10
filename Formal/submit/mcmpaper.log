@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.6)  8 FEB 2015 17:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.6)  10 FEB 2015 01:04
 entering extended mode
 **mcmpaper.tex
 (D:\CQUPT\MCM\Formal\submit\mcmpaper.tex
@@ -544,39 +544,63 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box39
 )
+(C:\CTEX\UserData\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\CTEX\MiKTeX\tex/latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count139
+\float@exts=\toks39
+\float@box=\box40
+\@float@everytoks=\toks40
+\@floatcapt=\box41
+)
+\@float@every@algorithm=\toks41
+\c@algorithm=\count140
+)
+(C:\CTEX\UserData\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count141
+\c@ALC@line=\count142
+\c@ALC@rem=\count143
+\c@ALC@depth=\count144
+\ALC@tlm=\skip75
+\algorithmicindent=\skip76
+)
 (D:\CQUPT\MCM\Formal\submit\mcmpaper.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 35.
 
 (C:\CTEX\MiKTeX\tex/latex\psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
+\scratchcounter=\count145
 \scratchdimen=\dimen154
-\scratchbox=\box40
-\nofMPsegments=\count140
-\nofMParguments=\count141
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count142
+\scratchbox=\box42
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count148
 \MPscratchDim=\dimen155
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
-\everyMPtoPDFconversion=\toks40
+\MPnumerator=\count149
+\makeMPintoPDFobject=\count150
+\everyMPtoPDFconversion=\toks43
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -584,8 +608,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 32.
-\c@lstlisting=\count145
+(lastpage)             ! on input line 35.
+\c@lstlisting=\count151
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -621,95 +645,121 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 32.
+\AtBeginShipoutBox=\box43
+Package hyperref Info: Link coloring ON on input line 35.
 (C:\CTEX\MiKTeX\tex/latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (C:\CTEX\MiKTeX\tex/generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count146
+\c@section@level=\count152
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (D:\CQUPT\MCM\Formal\submit\mcmpaper.out)
 (D:\CQUPT\MCM\Formal\submit\mcmpaper.out)
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 42.
-LaTeX Font Info:    Try loading font information for T1+fvs on input line 50.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 46.
+LaTeX Font Info:    Try loading font information for T1+fvs on input line 56.
 
 (C:\CTEX\UserData\tex\latex\bera\t1fvs.fd
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 50.
+(Font)              scaled to size 9.85492pt on input line 56.
 
 (C:\CTEX\MiKTeX\tex/latex\amsfonts\umsa.fd)
 (C:\CTEX\MiKTeX\tex/latex\amsfonts\umsb.fd)
 (C:\CTEX\MiKTeX\tex/latex\jknappen\ursfs.fd)
 (C:\CTEX\MiKTeX\tex/latex\base\ulasy.fd)
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 34.19977pt on input line 50.
+(Font)              scaled to size 34.19977pt on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/bx/n' in size <38> not available
-(Font)              Font shape `T1/fvs/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/fvs/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 34.19977pt on input line 50.
+(Font)              scaled to size 34.19977pt on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 17.99988pt on input line 50.
+(Font)              scaled to size 17.99988pt on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/bx/n' in size <20> not available
-(Font)              Font shape `T1/fvs/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/fvs/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 17.99988pt on input line 50.
+(Font)              scaled to size 17.99988pt on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fvs/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/fvs/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 50.
+(Font)              scaled to size 9.85492pt on input line 56.
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 50.
+(Font)              scaled to size 10.79993pt on input line 56.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 56.
  [1
 
 {C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-Overfull \hbox (84.37384pt too wide) in paragraph at lines 50--50
+Overfull \hbox (84.37384pt too wide) in paragraph at lines 56--56
  \T1/ppl/b/n/10.95 Key-word-s: [] 
  []
 
 [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 57.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 63.
  (D:\CQUPT\MCM\Formal\submit\mcmpaper.toc)
 \tf@toc=\write5
  [3]
 (D:\CQUPT\MCM\Formal\submit\body.tex
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 8.
  (C:\CTEX\MiKTeX\tex/latex\psnfss\omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
- <.//figure/fig1.jpg, id=145, 770.88pt x 418.56375pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.51 
+     ] <.//figure/fig1.jpg, id=175, 770.88pt x 418.56375pt>
 File: .//figure/fig1.jpg Graphic file (type jpg)
 
 <use .//figure/fig1.jpg>
-Package pdftex.def Info: .//figure/fig1.jpg used on input line 49.
+Package pdftex.def Info: .//figure/fig1.jpg used on input line 55.
 (pdftex.def)             Requested size: 426.79134pt x 231.7308pt.
- [4]
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 \item\textbf
+                 {Assumption 1-3:} The dispersal approach only includes cont...
+ <D:/CQUPT/MCM/Formal/submit/figure/fig1.jpg>]
+Overfull \hbox (14.28485pt too wide) in paragraph at lines 68--69
+\T1/ppl/m/n/10.95 In this sub-sec-tion, we briefly in-tro-duce the clas-si-cal 
+\T1/ppl/b/n/10.95 S\T1/ppl/m/n/10.95 usceptible, \T1/ppl/b/n/10.95 I\T1/ppl/m/n
+/10.95 nfective, \T1/ppl/b/n/10.95 R\T1/ppl/m/n/10.95 emoval(\T1/ppl/b/n/10.95 
+SIR\T1/ppl/m/n/10.95 ) model[[]]
+ []
+
+
 
 pdfTeX warning: pdflatex (file D:/CQUPT/MCM/Formal/submit/figure/fig2.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<.//figure/fig2.pdf, id=157, 199.07072pt x 113.66063pt>
+<.//figure/fig2.pdf, id=191, 199.07072pt x 113.66063pt>
 File: .//figure/fig2.pdf Graphic file (type pdf)
 
 <use .//figure/fig2.pdf>
-Package pdftex.def Info: .//figure/fig2.pdf used on input line 66.
+Package pdftex.def Info: .//figure/fig2.pdf used on input line 76.
 (pdftex.def)             Requested size: 426.79134pt x 243.68744pt.
- [5 <D:/CQUPT/MCM/Formal/submit/figure/fig1.jpg>]
-[6 <D:/CQUPT/MCM/Formal/submit/figure/fig2.pdf>]
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.91 \end{equation}
+                    <D:/CQUPT/MCM/Formal/submit/figure/fig2.pdf>]
 Package epstopdf Info: Source file: <.//figure/fig3.eps>
 (epstopdf)                    date: 2015-02-06 20:58:58
 (epstopdf)                    size: 11643 bytes
@@ -718,106 +768,292 @@ Package epstopdf Info: Source file: <.//figure/fig3.eps>
 (epstopdf)                    size: 5243 bytes
 (epstopdf)             Command: <epstopdf --outfile=.//figure/fig3-eps-converte
 d-to.pdf .//figure/fig3.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<.//figure/fig3-eps-converted-to.pdf, id=227, 421.575pt x 317.185pt>
+<.//figure/fig3-eps-converted-to.pdf, id=255, 421.575pt x 317.185pt>
 File: .//figure/fig3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use .//figure/fig3-eps-converted-to.pdf>
 Package pdftex.def Info: .//figure/fig3-eps-converted-to.pdf used on input line
- 114.
+ 127.
 (pdftex.def)             Requested size: 426.79134pt x 321.11415pt.
 
 
 pdfTeX warning: pdflatex (file D:/CQUPT/MCM/Formal/submit/figure/fig4.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<.//figure/fig4.pdf, id=228, 758.90436pt x 491.53516pt>
+<.//figure/fig4.pdf, id=257, 758.90436pt x 491.53516pt>
 File: .//figure/fig4.pdf Graphic file (type pdf)
 
 <use .//figure/fig4.pdf>
-Package pdftex.def Info: .//figure/fig4.pdf used on input line 121.
+Package pdftex.def Info: .//figure/fig4.pdf used on input line 135.
 (pdftex.def)             Requested size: 341.43306pt x 221.14377pt.
- [7] [8 <D:/CQUPT/MCM/Formal/submit/figure/fig3-eps-converted-to.pdf> <D:/CQUPT
-/MCM/Formal/submit/figure/fig4.pdf>] [9]
+ [7pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.139 \subsection
+                 {Strengths and Weaknesses}] [8pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.3}) has been already used, duplicate i
+gnored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.139 \subsection
+                 {Strengths and Weaknesses}pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.4}) has been already used, duplicate ignor
+ed
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.139 \subsection
+                 {Strengths and Weaknesses} <D:/CQUPT/MCM/Formal/submit/figure/
+fig3-eps-converted-to.pdf> <D:/CQUPT/MCM/Formal/submit/figure/fig4.pdf>]
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.3}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.194 
+      ]
 
 pdfTeX warning: pdflatex (file D:/CQUPT/MCM/Formal/submit/figure/fig5.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<.//figure/fig5.pdf, id=262, 541.09581pt x 319.0349pt>
+<.//figure/fig5.pdf, id=295, 541.09581pt x 319.0349pt>
 File: .//figure/fig5.pdf Graphic file (type pdf)
 
 <use .//figure/fig5.pdf>
-Package pdftex.def Info: .//figure/fig5.pdf used on input line 189.
+Package pdftex.def Info: .//figure/fig5.pdf used on input line 209.
 (pdftex.def)             Requested size: 341.43306pt x 201.30946pt.
- [10 <D:/CQUPT/MCM/Formal/submit/figure/fig5.pdf>]
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 \item \textbf
+                   {Assumption 2-1} There is no possibility of natural recov...
+ <D:/CQUPT/MCM/Formal/submit/figure/fig5.pdf>] [11]
 
 pdfTeX warning: pdflatex (file D:/CQUPT/MCM/Formal/submit/figure/fig6.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<.//figure/fig6.pdf, id=318, 789.01416pt x 468.82382pt>
+<.//figure/fig6.pdf, id=368, 789.01416pt x 468.82382pt>
 File: .//figure/fig6.pdf Graphic file (type pdf)
 
 <use .//figure/fig6.pdf>
-Package pdftex.def Info: .//figure/fig6.pdf used on input line 256.
+Package pdftex.def Info: .//figure/fig6.pdf used on input line 283.
 (pdftex.def)             Requested size: 341.43306pt x 202.87798pt.
- [11] [12 <D:/CQUPT/MCM/Formal/submit/figure/fig6.pdf>]
+ [12pdfTeX warning (ext4): destination with the same identifier (name{table.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.294 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.294 
+       <D:/CQUPT/MCM/Formal/submit/figure/fig6.pdf>]
 
 pdfTeX warning: pdflatex (file D:/CQUPT/MCM/Formal/submit/figure/fig7.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<.//figure/fig7.pdf, id=351, 1111.98543pt x 555.58948pt>
+<.//figure/fig7.pdf, id=400, 1111.98543pt x 555.58948pt>
 File: .//figure/fig7.pdf Graphic file (type pdf)
 
 <use .//figure/fig7.pdf>
-Package pdftex.def Info: .//figure/fig7.pdf used on input line 285.
+Package pdftex.def Info: .//figure/fig7.pdf used on input line 320.
 (pdftex.def)             Requested size: 426.79134pt x 213.2371pt.
-
+ [13]
 
 pdfTeX warning: pdflatex (file D:/CQUPT/MCM/Formal/submit/figure/fig8.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<.//figure/fig8.pdf, id=352, 855.567pt x 492.48701pt>
+<.//figure/fig8.pdf, id=413, 855.567pt x 492.48701pt>
 File: .//figure/fig8.pdf Graphic file (type pdf)
  <use .//figure/fig8.pdf>
-Package pdftex.def Info: .//figure/fig8.pdf used on input line 303.
+Package pdftex.def Info: .//figure/fig8.pdf used on input line 339.
 (pdftex.def)             Requested size: 426.79134pt x 245.67178pt.
 
-[13 <D:/CQUPT/MCM/Formal/submit/figure/fig7.pdf>] [14 <D:/CQUPT/MCM/Formal/subm
-it/figure/fig8.pdf>] (D:\CQUPT\MCM\Formal\submit\mcmpaper.bbl
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.352 \end{equation}
+                     <D:/CQUPT/MCM/Formal/submit/figure/fig7.pdf>] [15pdfTeX wa
+rning (ext4): destination with the same identifier (name{figure.8}) has been al
+ready used, duplicate ignored
 
-)
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.364 \end{equation}
+                     <D:/CQUPT/MCM/Formal/submit/figure/fig8.pdf>]
+Package epstopdf Info: Source file: <.//figure/fig9.eps>
+(epstopdf)                    date: 2015-02-08 21:48:38
+(epstopdf)                    size: 1426581 bytes
+(epstopdf)             Output file: <.//figure/fig9-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-08 21:50:22
+(epstopdf)                    size: 243499 bytes
+(epstopdf)             Command: <epstopdf --outfile=.//figure/fig9-eps-converte
+d-to.pdf .//figure/fig9.eps>
+(epstopdf)             \includegraphics on input line 379.
+Package epstopdf Info: Output file is already uptodate.
+
+<.//figure/fig9-eps-converted-to.pdf, id=474, 1205.50375pt x 590.205pt>
+File: .//figure/fig9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use .//figure/fig9-eps-converted-to.pdf>
+Package pdftex.def Info: .//figure/fig9-eps-converted-to.pdf used on input line
+ 379.
+(pdftex.def)             Requested size: 426.79134pt x 208.95236pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.391 
+       <D:/CQUPT/MCM/Formal/submit/figure/fig9-eps-converted-to.pdf>]
+<.//figure/fig10.jpg, id=491, 874.76813pt x 525.46312pt>
+File: .//figure/fig10.jpg Graphic file (type jpg)
+
+<use .//figure/fig10.jpg>
+Package pdftex.def Info: .//figure/fig10.jpg used on input line 399.
+(pdftex.def)             Requested size: 369.88582pt x 222.18433pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.10
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.413 \end{equation}
+                     <D:/CQUPT/MCM/Formal/submit/figure/fig10.jpg>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 416.
+
+<.//figure/fig11.jpg, id=502, 513.92pt x 321.2pt>
+File: .//figure/fig11.jpg Graphic file (type jpg)
+ <use .//figure/fig11.jpg>
+Package pdftex.def Info: .//figure/fig11.jpg used on input line 442.
+(pdftex.def)             Requested size: 426.79134pt x 266.74786pt.
+
+<.//figure/fig12.jpg, id=503, 874.76813pt x 525.46312pt>
+File: .//figure/fig12.jpg Graphic file (type jpg)
+
+<use .//figure/fig12.jpg>
+Package pdftex.def Info: .//figure/fig12.jpg used on input line 452.
+(pdftex.def)             Requested size: 426.79134pt x 256.37271pt.
+
+<.//figure/fig13.pdf, id=504, 885.00032pt x 1066.3409pt>
+File: .//figure/fig13.pdf Graphic file (type pdf)
+
+<use .//figure/fig13.pdf>
+Package pdftex.def Info: .//figure/fig13.pdf used on input line 460.
+(pdftex.def)             Requested size: 483.69684pt x 582.81206pt.
+
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 460--461
+ [][] 
+ []
+
+[18] [19pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.462 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.462 \end{figure}
+                   <D:/CQUPT/MCM/Formal/submit/figure/fig11.jpg> <D:/CQUPT/MCM/
+Formal/submit/figure/fig12.jpg>]
+<.//figure/fig14.pdf, id=525, 536.99008pt x 720.95079pt>
+File: .//figure/fig14.pdf Graphic file (type pdf)
+
+<use .//figure/fig14.pdf>
+Package pdftex.def Info: .//figure/fig14.pdf used on input line 466.
+(pdftex.def)             Requested size: 426.79134pt x 573.02115pt.
+ [20] [21pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.499 
+       <D:/CQUPT/MCM/Formal/submit/figure/fig13.pdf>] [22pdfTeX warning (ext4):
+ destination with the same identifier (name{figure.14}) has been already used, 
+duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.499 
+       <D:/CQUPT/MCM/Formal/submit/figure/fig14.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 524--528
+
+ []
+
+[23] [24] (D:\CQUPT\MCM\Formal\submit\mcmpaper.bbl
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
+
+(C:\CTEX\MiKTeX\tex/latex\psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [25]) [26]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 335.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 535.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 614.
+
+Overfull \hbox (35.18298pt too wide) in alignment at lines 611--651
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (35.18298pt too wide) in alignment at lines 651--691
+ [] [] [] [] [] [] [] 
+ []
+
+[27]
+Overfull \hbox (35.18298pt too wide) in alignment at lines 691--708
+ [] [] [] [] [] [] [] 
+ []
+
 ) 
 AED: lastpage setting LastPage
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+[28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (D:\CQUPT\MCM\Formal\submit\mcmpaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `mcmpaper.out' has not changed.
-(rerunfilecheck)             Checksum: 41C2A7A130B85586996BFAFEA3FBC82E;1823.
- ) 
+(rerunfilecheck)             Checksum: 3D962AC2382B0D7372318BA73592C28C;2126.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 409 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 9725 strings out of 495354
- 134497 string characters out of 3183860
- 272063 words of memory out of 3000000
- 12563 multiletter control sequences out of 15000+200000
- 65364 words of font info for 98 fonts, out of 3000000 for 9000
+ 10114 strings out of 495354
+ 139738 string characters out of 3183860
+ 323098 words of memory out of 3000000
+ 12864 multiletter control sequences out of 15000+200000
+ 72703 words of font info for 125 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,12n,45p,1221b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/UserData/fonts
-/type1/bera/fvsb8a.pfb><C:/CTEX/UserData/fonts/type1/bera/fvsr8a.pfb><C:/CTEX/M
-iKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palat
-ino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on mcmpaper.pdf (15 pages, 2175568 bytes).
+ 49i,12n,45p,1379b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/UserData/fonts/type1/b
+era/fvsb8a.pfb><C:/CTEX/UserData/fonts/type1/bera/fvsr8a.pfb><C:/CTEX/MiKTeX/fo
+nts/type1/urw/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8
+a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/CTEX/MiKTeX/fonts
+/type1/urw/palatino/uplri8a.pfb>
+Output written on mcmpaper.pdf (28 pages, 3028772 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

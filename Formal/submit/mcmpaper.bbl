@@ -1,78 +1,123 @@
 \begin{thebibliography}{10}
 
-\bibitem{adomavicius2005toward}
-Gediminas Adomavicius and Alexander Tuzhilin.
-\newblock Toward the next generation of recommender systems: A survey of the
-  state-of-the-art and possible extensions.
-\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
-  17(6):734--749, 2005.
+\bibitem{ebolafactsheet}
+World~Health Organization.
+\newblock Fact sheet of ebola virus disease.
+\newblock \url{http://www.who.int/mediacentre/factsheets/fs103/en/}.
 
-\bibitem{linden2003amazon}
-Greg Linden, Brent Smith, and Jeremy York.
-\newblock Amazon. com recommendations: Item-to-item collaborative filtering.
-\newblock {\em Internet Computing, IEEE}, 7(1):76--80, 2003.
+\bibitem{ebolaguide}
+World~Health Organization.
+\newblock Guidance for immunization programmes in the african region in the
+  context of ebola.
+\newblock
+  \url{http://apps.who.int/iris/bitstream/10665/137330/1/WHO_IVB_14.08_eng.pdf?ua=1}.
 
-\bibitem{bennett2007netflix}
-James Bennett and Stan Lanning.
-\newblock The netflix prize.
-\newblock In {\em Proceedings of KDD cup and workshop}, volume 2007, page~35,
-  2007.
+\bibitem{team2014ebola}
+WHO Ebola~Response Team.
+\newblock Ebola virus disease in west africa¡ªthe first 9 months of the
+  epidemic and forward projections.
+\newblock {\em N Engl J Med}, 371(16):1481--95, 2014.
 
-\bibitem{zheng2010clicks}
-Hua Zheng, Dong Wang, Qi~Zhang, Hang Li, and Tinghao Yang.
-\newblock Do clicks measure recommendation relevancy?: an empirical user study.
-\newblock In {\em Proceedings of the fourth ACM conference on Recommender
-  systems}, pages 249--252. ACM, 2010.
+\bibitem{world2014ebola}
+World~Health Organization et~al.
+\newblock Ebola and marburg virus disease epidemics: preparedness, alert,
+  control, and evaluation.
+\newblock 2014.
 
-\bibitem{miller2003movielens}
-Bradley~N Miller, Istvan Albert, Shyong~K Lam, Joseph~A Konstan, and John
-  Riedl.
-\newblock Movielens unplugged: experiences with an occasionally connected
-  recommender system.
-\newblock In {\em Proceedings of the 8th international conference on
-  Intelligent user interfaces}, pages 263--266. ACM, 2003.
+\bibitem{wool1998characterization}
+Rouven~J Wool-Lewis and Paul Bates.
+\newblock Characterization of ebola virus entry by using pseudotyped viruses:
+  identification of receptor-deficient cell lines.
+\newblock {\em Journal of virology}, 72(4):3155--3160, 1998.
 
-\bibitem{lewis2000introduction}
-Roger~J Lewis.
-\newblock An introduction to classification and regression tree (cart)
-  analysis.
-\newblock In {\em Annual Meeting of the Society for Academic Emergency Medicine
-  in San Francisco, California}, pages 1--14. Citeseer, 2000.
+\bibitem{mccluskey2010complete}
+C~Connell McCluskey.
+\newblock Complete global stability for an sir epidemic model with
+  delay¡ªdistributed or discrete.
+\newblock {\em Nonlinear Analysis: Real World Applications}, 11(1):55--59,
+  2010.
 
-\bibitem{jung2012attribute}
-Jason~J Jung.
-\newblock Attribute selection-based recommendation framework for short-head
-  user group: An empirical study by movielens and imdb.
-\newblock {\em Expert Systems with Applications}, 39(4):4049--4054, 2012.
+\bibitem{rebaudet2015ebola}
+Stanislas Rebaudet, Sandra Moore, and Renaud Piarroux.
+\newblock Ebola virus disease in west africa--the first 9 months.
+\newblock {\em The New England journal of medicine}, 372(2):188--188, 2015.
 
-\bibitem{breese1998empirical}
-John~S Breese, David Heckerman, and Carl Kadie.
-\newblock Empirical analysis of predictive algorithms for collaborative
-  filtering.
-\newblock In {\em Proceedings of the Fourteenth conference on Uncertainty in
-  artificial intelligence}, pages 43--52. Morgan Kaufmann Publishers Inc.,
-  1998.
+\bibitem{worldworld}
+World~Health Orgnization.
+\newblock World health statistics 2013-[buku].
 
-\bibitem{suykens1999least}
-Johan~AK Suykens and Joos Vandewalle.
-\newblock Least squares support vector machine classifiers.
-\newblock {\em Neural processing letters}, 9(3):293--300, 1999.
+\bibitem{small2006super}
+Michael Small, CK~Tse, and David~M Walker.
+\newblock Super-spreaders and the rate of transmission of the sars virus.
+\newblock {\em Physica D: Nonlinear Phenomena}, 215(2):146--158, 2006.
 
-\bibitem{chang2011libsvm}
-Chih-Chung Chang and Chih-Jen Lin.
-\newblock Libsvm: a library for support vector machines.
-\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
-  2(3):27, 2011.
+\bibitem{worldebola}
+World Health~Organization (WHO) et~al.
+\newblock Who: Ebola response roadmap situation report. 1 october 2014. geneva:
+  Who.[accessed 8 oct 2014].
 
-\bibitem{chung2003radius}
-Kai-Min Chung, Wei-Chun Kao, Chia-Liang Sun, Li-Lun Wang, and Chih-Jen Lin.
-\newblock Radius margin bounds for support vector machines with the rbf kernel.
-\newblock {\em Neural Computation}, 15(11):2643--2681, 2003.
+\bibitem{shulgin1998pulse}
+Boris Shulgin, Lewi Stone, and Zvia Agur.
+\newblock Pulse vaccination strategy in the sir epidemic model.
+\newblock {\em Bulletin of Mathematical Biology}, 60(6):1123--1148, 1998.
 
-\bibitem{hane1993pearson}
-Bernhard~G H{\"a}ne, Kathrin J{\"a}ger, and Hans~G Drexler.
-\newblock The pearson product-moment correlation coefficient is better suited
-  for identification of dna fingerprint profiles than band matching algorithms.
-\newblock {\em Electrophoresis}, 14(1):967--972, 1993.
+\bibitem{gradon2000outbreak}
+Jeremy Gradon.
+\newblock An outbreak of ebola virus: Lessons for everyday activities in the
+  intensive care unit.
+\newblock {\em Critical care medicine}, 28(1):284--285, 2000.
+
+\bibitem{nyenswah2014ebola}
+Tolbert Nyenswah, Miatta Fahnbulleh, Moses Massaquoi, Thomas Nagbe, Luke Bawo,
+  James~Dorbor Falla, Henry Kohar, Alex Gasasira, Pierre Nabeth, Sheldon Yett,
+  et~al.
+\newblock Ebola epidemic¡ªliberia, march--october 2014.
+\newblock {\em MMWR Morb Mortal Wkly Rep}, 63:1082--6, 2014.
+
+\bibitem{adraebola}
+Adventist Development and Relief Agency.
+\newblock Arda's response towards ebola in liberia.
+\newblock \url{http://www.adra.org/}.
+
+\bibitem{emergencyebola}
+The Emergency.
+\newblock Emergenza ebola, abbiamo bisogno del tuo aiuto.
+\newblock \url{http://www.adra.org/}.
+
+\bibitem{dowell1999transmission}
+Scott~F Dowell, Rose Mukunu, Thomas~G Ksiazek, Ali~S Khan, Pierre~E Rollin, and
+  CJ~Peters.
+\newblock Transmission of ebola hemorrhagic fever: a study of risk factors in
+  family members, kikwit, democratic republic of the congo, 1995.
+\newblock {\em Journal of Infectious Diseases}, 179(Supplement 1):S87--S91,
+  1999.
+
+\bibitem{mushengxue}
+Shengxue Mu.
+\newblock Ten ground truch must be recovered about ebola.
+\newblock \url{http://blog.sina.com.cn/s/blog_544838700102vfml.html}.
+
+\bibitem{hensley2004interferon}
+Lisa~E Hensley, Elizabeth~A Fritz, Peter~B Jahrling, Christopher Karp, John~W
+  Huggins, and Thomas~W Geisbert.
+\newblock Interferon-$\beta$ 1a and sars coronavirus replication.
+\newblock {\em Emerging infectious diseases}, 10(2):317, 2004.
+
+\bibitem{ungar1998hot}
+Sheldon Ungar.
+\newblock Hot crises and media reassurance: A comparison of emerging diseases
+  and ebola zaire.
+\newblock {\em British Journal of Sociology}, pages 36--56, 1998.
+
+\bibitem{har2005smaller}
+Sariel Har-Peled and Akash Kushal.
+\newblock Smaller coresets for k-median and k-means clustering.
+\newblock In {\em Proceedings of the twenty-first annual symposium on
+  Computational geometry}, pages 126--134. ACM, 2005.
+
+\bibitem{nvidiacuda}
+NVIDIA Corporation.
+\newblock The cuda zone.
+\newblock \url{http://www.nvidia.com/object/cuda_home_new.html}.
 
 \end{thebibliography}

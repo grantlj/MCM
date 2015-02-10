@@ -4,14 +4,18 @@
 
 \usepackage[36428]{MCMthesis}  %队号在这里填写
 %\usepackage[175,nosheet]{MCMthesis}%这个参数形式可去掉summary sheet首页。
-\problem{B}  %选题
+\problem{A}  %选题
 %===============设置正文和数学字体=============================
 %有些字体需要安装一些字体文件，注意辨别。
 %我参照 MCM论文集的字体 使用如下宏包来定制字体。
 \usepackage{palatino}
 \usepackage{longtable}
 \usepackage{rotating}
-
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 %设置段落之间的距离，若不需要删除或者注释掉即可。
 \setlength\parskip{.5\baselineskip}
 
@@ -23,7 +27,7 @@
 
 %==========================论文标题===============================
 %A bright and subtle title.
-\title{An implement of film recommendation system based on statistical models}
+\title{Fight against the Azrael: A optimized plan to eradicate Ebola}
 \author{Team \#36428}  
 \date{\today}
 %=================================================================
@@ -35,11 +39,16 @@
 \def\abstractname{Abstract}%可修改摘要名称
 \begin{abstract}
 %注意600字
-%  With the rapid development in Internet technology, the trend of appreciating films online is becoming more and more heated. In order to realize the maximum profits, it is essential for content providers to collect users' information, data, including both their basic personal identities and implicit browsing histories and habits, to analyse their characteristic film styles and favor and eventually recommend potential best choices. Actually, this kind of application pipeline has been widely used in those famous sites like NetFlix, Hulu and Amazon, etc. 
-%  In this competition problem, we are required to implement a simple version of such a system. Therefore, we focus our attention on the utilization of raw data provided by MovieLens dataset and model relatively precious and objective features for both users and movies. Later, we are able to analyse any specific user's film favor based on statistic approaches. In addition, with the aid of Support Vector Machine(SVM) and Classification and Regression Tree(C\&RT), we innovatively mine the implicit information from rating records and establish a predictive model based on users' and movies' features. Finally, we set experiments to compare our models with the traditional collaborative filtering algorithm and get some interesting conclusions. 
+  The Ebola virus disease(EVD) is a lethal disease for humans and other primates caused by the deadly Ebola virus. According to the WHO long-term trace, the fatality rate of Ebola is up to 85\%, just second to the well-known lupomania. Fortunately, in this competition, we have been set in a background with the invention of new medication which could stop Ebola dispersal and cure patients with early symptoms. 
+  
+  Our mission is to establish a model to numerically describe both the dispersal process of the lethal infection, and human being's process to manufacture, deliver and treat Ebola with this medicine. In order to implement such subtle and exciting procedures to fight against the Azrael, we deliberately divide the procedures into two major steps: modelling the Ebola virus' basic spread progress in ideal cases at a particular region; modelling human being's hygiene actions and medicine delivery process, incorporating our fighting model into the virus' instinct properties and evaluating the results.
+  
+  In the first model, we modify the classical \textbf{S}usceptible, \textbf{I}nfective, \textbf{R}emoval(\textbf{SIR}) model in epidemic dynamic fields into our \textbf{SID}(Death) model. The \textbf{SID} model is meant to help us observing the disastrous infection process of Ebola in none human interference conditions. With the default attributes settings, we successfully generate a real-time simulation result of the spread and attacking process in Western Africa districts. 
+  
+  However, in the primary \textbf{SID} model, all the parameters are set in a way lacking of consideration in real life. This makes the simulation result too ideal to be feasible in practice. This is just the motivation for us to establish the second model. In the second model, we expand the \textbf{SID} model to a brand-new one:  \textbf{S}usceptible, \textbf{P}rimary, \textbf{A}dvanced, \textbf{R}ecovery, \textbf{D}eath(\textbf{SPARD}). All parameters in \textbf{SPARD} are dynamic changing, which means a much more precise and subtle system. In addition, we develop a \textbf{E}arly \textbf{W}arning \textbf{S}ystem(EWS) to help doctors monitoring and determining the demand of medicine in real-time. We prove our \textbf{SPARD} model has considerable number of advantages to help fighting against EVD by providing vivid raw data, figures and simulation results in the experiment part. According to the simulation result, the EVD outbreak can be suspended in approximately 200days.
   
 \begin{keywords}
-%recommendation system; collaborative filtering; SVM regression; C\&RT
+EVD, SIR, SPARD, Early Warning, Graph Optimization, real-time simulation 
 \end{keywords}
 \end{abstract}
 

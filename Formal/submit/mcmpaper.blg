@@ -1,3 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: mcmpaper.aux
 The style file: unsrt.bst
 Database file #1: cites.bib
+Warning--entry type for "nvidiacuda" isn't style-file defined
+--line 173 of file cites.bib
+Warning--empty journal in world2014ebola
+Warning--empty journal in worldworld
+Warning--empty year in worldworld
+(There were 4 warnings)
