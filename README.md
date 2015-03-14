@@ -1,6 +1,8 @@
 # MCM
 Our solution for the 2015 The Mathematical Contest in Modeling(MCM 2015) Competition.
+We welcome you to download the final paper: 36428.pdf
 
+For more competiton, please view [COMAP: Official Website for MCM/ICM].
 ##Problem Description:
 Eradicating Ebola
  
@@ -16,3 +18,5 @@ The template of latex format paper.
 
 ##Simulation
 The solution for campus simulation competition(just warm up!)
+
+ [COMAP: Official Website for MCM/ICM]:http://www.comap.com/
