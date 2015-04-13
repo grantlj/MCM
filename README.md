@@ -3,6 +3,8 @@ Our solution for the 2015 The Mathematical Contest in Modeling(MCM 2015) Competi
 We welcome you to download the final paper: 36428.pdf
 
 For more competiton, please view [COMAP: Official Website for MCM/ICM].
+
+##Competition Result: Honorable Mention
 ##Problem Description:
 Eradicating Ebola
  
